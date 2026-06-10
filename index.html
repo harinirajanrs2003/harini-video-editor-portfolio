@@ -2,320 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HARINI R — Video Editor & Content Creator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harini R — Video Editor & Content Creator</title>
+  <meta name="description" content="Portfolio of Harini R — Video Editor, Reel Creator, and Digital Content Creator based in Tamil Nadu, India." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- Cursor Glow -->
-  <div class="cursor-glow" id="cursorGlow"></div>
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <!-- HR REMOVED -->
+    </div>
+  </div>
 
-  <!-- Ambient Orbs -->
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
+  <!-- NAV -->
+  <header class="nav-wrap" id="navbar">
+    <nav class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        Harini<span class="logo-dot">.</span>
+      </a>
 
-  <!-- ───────── NAV ───────── -->
-  <nav class="nav" id="navbar">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">HR<span class="dot">.</span></a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
 
-  <!-- ───────── HERO ───────── -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <div class="hero-badge reveal">✦ Available for Freelance</div>
-      <h1 class="hero-name reveal">HARINI<br><span class="hero-name-accent">R.</span></h1>
-      <p class="hero-subtitle reveal">Video Editor <span class="sep">·</span> Reel Creator <span class="sep">·</span> Content Creator</p>
-      <p class="hero-desc reveal">
-        Creative and detail-oriented video editor with <strong>6 months of hands-on experience</strong> at Studio S, Chidambaram. Transforming raw footage into compelling visual stories through precision editing and creative direction.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#contact" class="btn-primary">Get In Touch</a>
-        <a href="#skills" class="btn-ghost">View Skills ↓</a>
-      </div>
-    </div>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+  </header>
 
-    <!-- Film-strip ticker — the signature element -->
-    <div class="filmstrip-wrap">
-      <div class="filmstrip-perforations top"></div>
-      <div class="filmstrip-ticker">
-        <div class="ticker-track" id="tickerTrack">
-          <span>CapCut</span><span>✦</span>
-          <span>Final Cut Pro</span><span>✦</span>
-          <span>Video Editing</span><span>✦</span>
-          <span>Digital Marketing</span><span>✦</span>
-          <span>Creative Storytelling</span><span>✦</span>
-          <span>Reels</span><span>✦</span>
-          <span>Color Grading</span><span>✦</span>
-          <span>Motion Graphics</span><span>✦</span>
-          <!-- duplicate for seamless loop -->
-          <span>CapCut</span><span>✦</span>
-          <span>Final Cut Pro</span><span>✦</span>
-          <span>Video Editing</span><span>✦</span>
-          <span>Digital Marketing</span><span>✦</span>
-          <span>Creative Storytelling</span><span>✦</span>
-          <span>Reels</span><span>✦</span>
-          <span>Color Grading</span><span>✦</span>
-          <span>Motion Graphics</span><span>✦</span>
-        </div>
-      </div>
-      <div class="filmstrip-perforations bottom"></div>
-    </div>
+  <main>
 
-    <!-- Hero visual card -->
-    <div class="hero-visual reveal">
-      <div class="glass-avatar">
-        <div class="avatar-ring"></div>
-        <div class="avatar-initials">HR</div>
-        <div class="avatar-badge-float">🎬</div>
-      </div>
-      <div class="hero-stat-cards">
-        <div class="stat-card">
-          <span class="stat-num">6<span class="stat-plus">mo</span></span>
-          <span class="stat-label">Experience</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">2<span class="stat-plus">+</span></span>
-          <span class="stat-label">Pro Tools</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-num">∞</span>
-          <span class="stat-label">Creativity</span>
-        </div>
-      </div>
-    </div>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        
+        <div class="hero-left">
+          <h1>HARINI R.</h1>
 
-    <div class="scroll-hint">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
+          <p>
+            Video Editor · Reel Creator · Content Creator
+          </p>
 
-  <!-- ───────── ABOUT ───────── -->
-  <section class="section about-section" id="about">
-    <div class="container">
-      <div class="section-eyebrow reveal">Who I Am</div>
-      <h2 class="section-title reveal">Crafting Stories<br>Frame by Frame</h2>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>I'm <strong>Harini R</strong>, a passionate video editor and content creator based in Tamil Nadu, India. My journey into video editing began with a fascination for how a sequence of frames can evoke emotion, tell a story, and inspire action.</p>
-          <p>With professional experience at <strong>Studio S, Chidambaram</strong>, I've sharpened my skills in crafting reels, promotional videos, and digital marketing content that resonates with audiences across platforms.</p>
-          <p>I believe every frame is an opportunity — to surprise, to captivate, and to connect. I bring both technical precision and artistic intuition to every project I touch.</p>
-          <div class="about-tags">
-            <span class="tag">🎞 Cinematic Cuts</span>
-            <span class="tag">📱 Social Reels</span>
-            <span class="tag">🎨 Creative Direction</span>
-            <span class="tag">📣 Brand Content</span>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn--primary">Get In Touch</a>
           </div>
-        </div>
-        <div class="about-cards reveal">
-          <div class="glass-card about-card-1">
-            <div class="card-icon">🎬</div>
-            <h4>Studio Trained</h4>
-            <p>Real-world experience at a professional creative studio handling client projects.</p>
-          </div>
-          <div class="glass-card about-card-2">
-            <div class="card-icon">⚡</div>
-            <h4>Fast Turnaround</h4>
-            <p>Delivering polished, publish-ready content on time, every time.</p>
-          </div>
-          <div class="glass-card about-card-3">
-            <div class="card-icon">🌐</div>
-            <h4>Digital-First</h4>
-            <p>Optimised content for Instagram, YouTube, and digital marketing campaigns.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───────── EXPERIENCE ───────── -->
-  <section class="section exp-section" id="experience">
-    <div class="container">
-      <div class="section-eyebrow reveal">Where I've Worked</div>
-      <h2 class="section-title reveal">Experience</h2>
-      <div class="exp-timeline">
-        <div class="exp-line"></div>
-        <div class="exp-item reveal">
-          <div class="exp-dot"></div>
-          <div class="glass-card exp-card">
-            <div class="exp-header">
-              <div class="exp-logo">S</div>
-              <div>
-                <h3 class="exp-company">Studio S</h3>
-                <p class="exp-loc">📍 Chidambaram, Tamil Nadu</p>
-              </div>
-              <div class="exp-duration">6 Months</div>
-            </div>
-            <div class="exp-role">Video Editor & Content Creator</div>
-            <ul class="exp-bullets">
-              <li>Edited promotional reels and short-form video content for social media campaigns.</li>
-              <li>Collaborated with creative directors to ensure brand consistency across all video output.</li>
-              <li>Used CapCut and Final Cut Pro to deliver polished, platform-optimised content.</li>
-              <li>Contributed to digital marketing strategy through engaging visual storytelling.</li>
-            </ul>
-            <div class="exp-tags">
-              <span>CapCut</span>
-              <span>Final Cut Pro</span>
-              <span>Social Media</span>
-              <span>Digital Marketing</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───────── SKILLS ───────── -->
-  <section class="section skills-section" id="skills">
-    <div class="container">
-      <div class="section-eyebrow reveal">What I Do</div>
-      <h2 class="section-title reveal">Skills & Expertise</h2>
-      <div class="skills-grid">
-
-        <div class="skill-card glass-card reveal" data-delay="0">
-          <div class="skill-icon-wrap" style="--sc:#6C5CE7">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3V9z"/></svg>
-          </div>
-          <h4>CapCut</h4>
-          <p>Mobile & desktop video editing with advanced effects, transitions, and text animations for social-first content.</p>
-          <div class="skill-bar"><div class="skill-fill" data-width="92%" style="--bar-color:#6C5CE7"></div></div>
-          <span class="skill-pct">Expert</span>
-        </div>
-
-        <div class="skill-card glass-card reveal" data-delay="100">
-          <div class="skill-icon-wrap" style="--sc:#E84393">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
-          <h4>Final Cut Pro</h4>
-          <p>Professional-grade editing on macOS — multi-cam editing, colour grading, and cinematic workflows.</p>
-          <div class="skill-bar"><div class="skill-fill" data-width="80%" style="--bar-color:#E84393"></div></div>
-          <span class="skill-pct">Proficient</span>
-        </div>
-
-        <div class="skill-card glass-card reveal" data-delay="200">
-          <div class="skill-icon-wrap" style="--sc:#FF6B35">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 10l-4 4 6 6 4-16-18 7 4 2 2 6 3-4"/></svg>
-          </div>
-          <h4>Video Editing</h4>
-          <p>End-to-end video production from rough cut to final export — pacing, audio sync, effects, and rendering.</p>
-          <div class="skill-bar"><div class="skill-fill" data-width="90%" style="--bar-color:#FF6B35"></div></div>
-          <span class="skill-pct">Expert</span>
-        </div>
-
-        <div class="skill-card glass-card reveal" data-delay="300">
-          <div class="skill-icon-wrap" style="--sc:#0984E3">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
-          </div>
-          <h4>Digital Marketing Content</h4>
-          <p>Creating conversion-focused video content for Instagram Reels, YouTube Shorts, and ad campaigns.</p>
-          <div class="skill-bar"><div class="skill-fill" data-width="85%" style="--bar-color:#0984E3"></div></div>
-          <span class="skill-pct">Advanced</span>
-        </div>
-
-        <div class="skill-card glass-card reveal skill-card-wide" data-delay="400">
-          <div class="skill-icon-wrap" style="--sc:#A855F7">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-          </div>
-          <h4>Creative Storytelling</h4>
-          <p>Crafting narratives that align with brand voice — from hook to CTA — keeping audiences hooked from the first second to the last frame.</p>
-          <div class="skill-bar"><div class="skill-fill" data-width="88%" style="--bar-color:#A855F7"></div></div>
-          <span class="skill-pct">Advanced</span>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ───────── EDUCATION ───────── -->
-  <section class="section edu-section" id="education">
-    <div class="container">
-      <div class="section-eyebrow reveal">Academic Background</div>
-      <h2 class="section-title reveal">Education</h2>
-      <div class="edu-card-wrap reveal">
-        <div class="glass-card edu-card">
-          <div class="edu-glyph">🎓</div>
-          <div class="edu-body">
-            <div class="edu-degree">M.Sc. Information Technology</div>
-            <div class="edu-uni">Annamalai University</div>
-            <div class="edu-dept">Department of Computer and Information Science</div>
-            <div class="edu-meta">
-              <span class="edu-badge">Final Year</span>
-              <span class="edu-badge">Tamil Nadu, India</span>
-            </div>
-          </div>
-          <div class="edu-deco"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
 
-  <!-- ───────── CONTACT ───────── -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="section-eyebrow reveal">Let's Collaborate</div>
-      <h2 class="section-title reveal">Get In Touch</h2>
-      <p class="contact-sub reveal">Have a project in mind? I'd love to bring your vision to life through compelling video content.</p>
-      <div class="contact-grid reveal">
-        <a href="tel:8220142216" class="glass-card contact-card">
-          <div class="contact-icon" style="--cc:#6C5CE7">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.17 1.18 2 2 0 012.2.07h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          </div>
-          <div class="contact-label">Phone</div>
-          <div class="contact-value">+91 82201 42216</div>
+        <h2>Contact Me</h2>
+
+        <!-- CONTACT CARDS -->
+        <a href="tel:8220142216" class="contact-card">
+          📞 +91 82201 42216
         </a>
-        <a href="mailto:harinir2209@gmail.com" class="glass-card contact-card">
-          <div class="contact-icon" style="--cc:#E84393">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div class="contact-label">Email</div>
-          <div class="contact-value">harinir2209@gmail.com</div>
-        </a>
-        <a href="#" class="glass-card contact-card">
-          <div class="contact-icon" style="--cc:#FF6B35">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </div>
-          <div class="contact-label">Instagram</div>
-          <div class="contact-value">@harini.edits</div>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- ───────── FOOTER ───────── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <span class="footer-logo">HR<span class="dot">.</span></span>
-        <p class="footer-copy">© 2025 Harini R. Crafted with passion & precision.</p>
-        <p class="footer-tagline">Every frame tells a story.</p>
+        <a href="mailto:harinir2209@gmail.com" class="contact-card">
+          📧 harinir2209@gmail.com
+        </a>
+
+        <!-- WHATSAPP BUTTON -->
+        <a href="https://wa.me/918220142216" class="contact-card">
+          💬 Chat on WhatsApp
+        </a>
+
+        <!-- SOCIAL -->
+        <div class="social-row">
+
+          <!-- INSTAGRAM -->
+          <a href="https://www.instagram.com/deer_clickzz" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="mailto:harinir2209@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+        </div>
+
       </div>
-    </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Harini R</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
